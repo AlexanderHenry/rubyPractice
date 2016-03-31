@@ -8,10 +8,14 @@ def simpleMath
 	subtract = first - second
 	multiply = first * second
 	divide = first / second
+	squaredFirst = first * first
+	squaredSecond = second * second
 
 	puts "#{first} + #{second} = #{add.to_f.round(2)}\n
 #{first} - #{second} = #{subtract.to_f.round(2)}\n
 #{first} * #{second} = #{multiply.to_f.round(2)}\n
-#{first} / #{second} = #{divide.to_f.round(2)}"
+#{first} / #{second} = #{divide.to_f.round(2)}\n
+#{first} * #{first} = #{squaredFirst.to_f.round(2)}\n
+#{second} * #{second} = #{squaredSecond.to_f.round(2)}"
 end
 simpleMath
