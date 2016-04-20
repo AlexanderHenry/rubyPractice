@@ -2,12 +2,25 @@ def painting
 
 	puts "What is the length of the room in feet?"
 	length = gets.to_f
+	
+	while length <= 0
+		puts "Negative numbers aren't possible in this situation!"
+		puts "What is the length of the room in feet?"
+		length = gets.to_f
+	end
+	
 	puts "What is the width of the room in feet?"
 	width = gets.to_f
-
+	
+	while width <= 0
+		puts "Negative numbers aren't possible in this situation!"
+		puts "What is the width of the room in feet?"
+		width = gets.to_f
+	end
+	
 	area = length * width
-
-	if area == 0
+		
+	if area <= 0
 		gal = 0
 		puts "You don't have any paint to purchase!"
 	else
